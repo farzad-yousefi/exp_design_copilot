@@ -1,0 +1,6 @@
+{
+"events": {
+"path": "data/events.parquet",
+"columns": ["user_id","ts","event_name","group","success","first_seen"]
+}
+}

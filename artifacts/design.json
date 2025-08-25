@@ -1,0 +1,22 @@
+{
+  "test_name": "Show new onboarding tooltip to improve activation",
+  "hypothesis": "If we show new onboarding tooltip to improve activation, then the activation_rate will increase by ~3.00% (from 25% to 28%).",
+  "assignment": "Randomized 50/50 at user level; stratify by platform if possible.",
+  "primary_metric": "activation_rate",
+  "guardrails": [
+    "retention_d7",
+    "crash_rate"
+  ],
+  "sample_size": {
+    "n_per_group": 3397,
+    "total_n": 6794,
+    "p1": 0.25,
+    "p2": 0.28,
+    "alpha": 0.05,
+    "power": 0.8,
+    "mde": 0.03
+  },
+  "citations": {
+    "activation_rate": "Share of new users who complete pairing AND 3 actions within 7 days."
+  }
+}

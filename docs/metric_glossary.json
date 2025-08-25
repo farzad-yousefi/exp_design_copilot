@@ -1,0 +1,17 @@
+{
+"activation_rate": {
+"definition": "Share of new users who complete pairing AND 3 actions within 7 days.",
+"notes": "Adjust to your product reality; include precise event names and time windows.",
+"sql": "SUM(activated)/NULLIF(COUNT(),0) AS activation_rate",
+"events_required": ["pair", "action"]
+},
+"retention_d7": {
+"definition": "D7 retention among new users: returned with any event on day 7.",
+"notes": "Cohort by first_seen_date.",
+"sql": "SUM(retained_d7)/NULLIF(COUNT(),0) AS retention_d7"
+},
+"crash_rate": {
+"definition": "Crashes per 1k sessions.",
+"sql": "1000.0 * SUM(crash_events)/NULLIF(SUM(session_count),0) AS crash_per_1k"
+}
+}
