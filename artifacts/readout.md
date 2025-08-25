@@ -1,0 +1,8 @@
+
+## SRM Check
+```
+Observed users: {'B': 1}
+Expected (50/50 across 1 groups): [1.0]
+Chi-square: 0.0000, p-value: nan
+No SRM (p>=0.05)
+```
