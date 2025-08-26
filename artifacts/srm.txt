@@ -1,4 +1,3 @@
-Observed users: {'B': 1}
-Expected (50/50 across 1 groups): [1.0]
-Chi-square: 0.0000, p-value: nan
-No SRM (p>=0.05)
+Users by group: {'A': 4043, 'B': 3957}
+Chi-square=0.9245, p=0.336296
+No SRM
