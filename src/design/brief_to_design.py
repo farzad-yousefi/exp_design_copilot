@@ -1,4 +1,3 @@
-# from future import annotations
 import json
 from dataclasses import dataclass, asdict
 from pathlib import Path
